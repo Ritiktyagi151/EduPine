@@ -3,7 +3,7 @@ import Home from "./pages/home/Home";
 import AboutUsPage from "./pages/about/About";
 import Navbar from "./common/navbar/Navbar";
 import Footer from "./common/footer/Footer";
-import ContactPage from "./pages/contact-us/contact-us";
+import ContactPage from "./pages/contact-us/Contact-us";
 import CareersPage from "./pages/careers/careers";
 import Blogs from "./pages/blogs/Blogs";
 import Sidebar from "./common/sideBar/SideBar";
