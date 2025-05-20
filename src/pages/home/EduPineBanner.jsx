@@ -103,7 +103,7 @@ const EduPineBanner = () => {
   };
 
   return (
-    <section className="relative pt-8 px-8 w-full sm:px-2 lg:px-1 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden">
+    <section className="relative pt-8 px-2 w-full sm:px-2 lg:px-1 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden">
       {/* Background animation elements */}
       <div className="absolute inset-0 overflow-hidden  opacity-20">
         {[...Array(6)].map((_, i) => (

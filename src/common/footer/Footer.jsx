@@ -21,14 +21,13 @@ const Footer = () => {
         { name: "Home", url: "/" },
         { name: "Courses", url: "/courses" },
         { name: "About Us", url: "/about" },
-        { name: "Blog", url: "/blog" },
+        { name: "Blog", url: "/blogs" },
       ],
     },
     {
       title: "Support",
       links: [
-        { name: "Contact Us", url: "/contact" },
-        { name: "FAQs", url: "/faqs" },
+        { name: "Contact Us", url: "/contact-us" },
         { name: "Privacy Policy", url: "/privacy" },
         { name: "Terms of Service", url: "/terms" },
       ],
@@ -36,10 +35,11 @@ const Footer = () => {
     {
       title: "Categories",
       links: [
-        { name: "Web Development", url: "/category/web-dev" },
-        { name: "Data Science", url: "/category/data-science" },
-        { name: "Business", url: "/category/business" },
-        { name: "Design", url: "/category/design" },
+        { name: "Tuition", url: "/login" },
+        { name: "Languages", url: "/login" },
+        { name: "IT courses", url: "/login" },
+        { name: "Exam Coaching", url: "/login" },
+        { name: "Hobby Classes", url: "/login" },
       ],
     },
   ];
@@ -54,7 +54,7 @@ const Footer = () => {
 
   const contactInfo = [
     { icon: <FiMail />, text: "contact@edupine.com" },
-    { icon: <FiPhone />, text: "+1 (555) 123-4567" },
+    { icon: <FiPhone />, text: "+91 1234567890" },
     { icon: <FiMapPin />, text: "123 Education St, Learning City" },
     { icon: <FiClock />, text: "Mon-Fri: 9AM - 5PM" },
   ];

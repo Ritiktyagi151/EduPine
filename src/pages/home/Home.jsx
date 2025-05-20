@@ -52,7 +52,7 @@ const Home = () => {
   return (
     <>
       <EduPineBanner />
-      
+
       <section className="relative overflow-hidden">
         {/* Hero Section */}
         <div className="relative pt-10 pb-20 px-4 sm:px-6 lg:px-10 bg-gradient-to-br from-blue-50 to-indigo-50">
@@ -118,7 +118,6 @@ const Home = () => {
                   transition={{ delay: 0.8 }}
                 >
                   <ul className="grid grid-cols-2 gap-2">
-                    z
                     {features.map((feature, index) => (
                       <motion.li
                         key={index}

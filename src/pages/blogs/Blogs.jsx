@@ -22,7 +22,6 @@ const BlogCard = ({ post, index }) => {
       className="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
-
       <div className="relative z-10 h-full flex flex-col">
         <div className="overflow-hidden h-48">
           <motion.img
@@ -34,7 +33,6 @@ const BlogCard = ({ post, index }) => {
             className="w-full h-full object-cover"
           />
         </div>
-
         <div className="p-6 flex-grow">
           <div className="flex gap-4 mb-3 text-sm">
             <span className="flex items-center text-gray-500 bg-blue-50 px-3 py-1 rounded-full">
@@ -44,13 +42,10 @@ const BlogCard = ({ post, index }) => {
               <FiClock className="mr-1.5" /> {post.readTime}
             </span>
           </div>
-
           <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
             {post.title}
           </h3>
-
           <p className="text-gray-600 mb-5 line-clamp-2">{post.excerpt}</p>
-
           <motion.div
             whileHover={{ x: 5 }}
             className="inline-flex items-center text-blue-600 font-medium"
@@ -129,7 +124,25 @@ export default function Blogs() {
   ];
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
+    <section className="pt-5 pb-10 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
+      {/* Banner */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="relative bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-8 mb-12 rounded-xl shadow-lg overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-pattern opacity-10" />
+        <div className="relative z-10 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Our Blog</h1>
+          <p className="text-lg text-blue-100 max-w-2xl mx-auto">
+            Stay updated with the latest in web development, design, and
+            technology
+          </p>
+        </div>
+      </motion.div>
+
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -145,14 +158,12 @@ export default function Blogs() {
             viewport={{ once: true }}
             className="h-1 bg-gradient-to-r from-blue-400 to-indigo-500 mx-auto mb-6 max-w-xs"
           />
-
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Latest{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600">
               Insights
             </span>
           </h2>
-
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
