@@ -546,8 +546,8 @@ const CoursePage = () => {
     // Validate if user is logged in (simplified)
     const isLoggedIn = localStorage.getItem("token"); // In a real app, use proper auth context
     if (!isLoggedIn) {
-      alert("Please login to enroll in courses");
-      navigate("/login");
+      // alert("Please login to enroll in courses");
+      // navigate("/login");
     } else {
       navigate("/registration", { state: { courseId } });
     }
