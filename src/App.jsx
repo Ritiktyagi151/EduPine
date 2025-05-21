@@ -15,6 +15,7 @@ import Sidebar from "./common/sideBar/SideBar";
 import LoginPage from "./pages/auth/LoginPage";
 import SignupPage from "./pages/auth/SignupPage";
 import MultiStepForm from "./components/MultiStepForm";
+import Courses from "./pages/courses/Courses_page";
 
 const Layout = () => {
   return (
@@ -46,6 +47,10 @@ const router = createBrowserRouter(
         {
           path: "/about",
           element: <AboutUsPage />,
+        },
+        {
+          path: "/courses",
+          element: <Courses />,
         },
         {
           path: "/blogs",
